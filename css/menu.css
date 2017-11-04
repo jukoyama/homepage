@@ -1,0 +1,25 @@
+/* 左サブメニューCSS */
+div#submenuleft {
+  float: left;
+}
+
+.social a {
+  padding-left: 0;
+  display:table;
+  text-align:center;
+  vertical-align: middle;
+}
+
+/*figure {
+  width: 32;
+  height: 32;
+}*/
+
+/* 中央プロフィール */
+div#content-middle {
+  float: left;
+}
+
+div#submenuright {
+  float: right;
+}

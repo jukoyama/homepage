@@ -1,0 +1,66 @@
+/* 全てのリンクボタン */
+.social .link {
+  display: inline-block; /* インラインボックスの生成 */
+  vertical-align: middle; /* 縦に真ん中 */
+  position: relative; /* 現在の位置を元に相対的な位置に決める */
+  width: 80px; /* 横幅 */
+  height: 80px; /* 縦幅 */
+  border-radius: 50%; /* 枠に丸み */
+  border: 2px dashed white; /* 白い点線の枠線 */
+  background-clip: content-box; /* padding領域も含まない、内容部分のみに表示 */
+  padding: 5px; /* 内側の余白 */
+  transition: .5s; /* 時間的変化 */
+  color: #D7D0BE;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 70px;
+}
+
+/* マウスを乗せた時のアイコンの動作 */
+.social .link i {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ボタンにマウスを乗せた時のボタンの周りの動き */
+.social .link:hover {
+  padding: 0px;
+  color: white;
+  margin-left: 0px;
+  transform: translate(0px) rotate(360deg); /* 360度回転 */
+}
+
+/* google-plusSNSボタン */
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+/* twitterSNSボタン */
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+/* pocketSNSボタン */
+.social .link.pocket {
+  background-color: #EF3F56;
+  color: white;
+}
+/*  facebookSNSボタン */
+.social .link.facebook {
+  background-color: #3B5998;
+  color white;
+}
+
+.social i {
+  color: white;
+}
+
+.fa-large {
+  font-size: 50px;
+}

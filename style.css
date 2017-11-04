@@ -1,0 +1,110 @@
+/*html,
+body {
+  font-size: 14px;
+  margin: 0;
+  color: #311d0a;
+  font-family: 'Meiryo';
+}
+
+body.iframe {
+  overflow: hidden;
+}
+
+input, button, select, option, textarea {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+input:not([type]), input[type="text"] {
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  line-height: 22px;
+  padding: 2px;
+  font-family: Meiryo;
+}
+
+select {
+  height: 28px;
+}
+
+button {
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 10px;
+  transition: .4s all;
+  font-family: Meiryo;
+  line-height: 20px;
+}
+
+button:hover {
+  background: #009eb1;
+}
+
+button[disabled] {
+  background: #ccc;
+}
+
+#app {
+  margin: 0 auto;
+}
+
+.area {
+  box-sizing: border-box;
+  padding: 20px;
+}
+:not(.iframe) .area {
+  overflow-y: visible !important;
+}
+.iframe .area {
+  overflow-y: auto;
+}
+
+.demotext {
+  position: fixed;
+  top: 5px;
+  right: -40px;
+  background: rgba(210, 79, 0, 0.4);
+  padding: 3px 50px;
+  font-size: 11px;
+  color: #fff;
+  transform: rotate(25deg);
+}
+
+.openlink {
+  position: fixed;
+  display: inline-block;
+  bottom: 5px;
+  right: 5px;
+  background: #999;
+  border-radius: 2px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+
+.openlink:hover {
+  opacity: 1;
+}
+
+
+dl.props {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+dl.props dt,
+dl.props dd {
+  padding: 2px 4px;
+  box-sizing: border-box;
+}
+dl.props dt {
+  width: 60px;
+}
+dl.props dd {
+  margin: 0;
+  width: calc(100% - 60px);
+}*/

@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 
+	'ヒラギノ角ゴ ProN W3',	Meiryo, メイリオ, sans-serif;
+}
+
+#wrapper{
+	width:950px;
+	background-color:lavender;	
+	margin:0 auto;
+}
+
+header{
+	width:930px;
+	height:100px;
+	margin:0px 10px 10px 10px;
+	padding:10px 0px 0px 0px;
+	background-color:lavender;
+	color:#000;
+}
+
+header h1{
+	font-size:25px;
+	padding:30px 0px 0px 50px;
+}
+
+nav{
+	width:930px;
+	height:30px;
+	background-color:royalblue;
+	margin:10px 10px 10px 10px;
+}
+
+nav ul{
+	list-style:none;
+}
+
+nav ul li{
+    display: inline;
+    padding-right:10px;
+}
+
+nav ul li a{
+	line-height:30px;
+	text-decoration:none;
+	color:aliceblue;
+}
+
+nav ul li a:hover{
+	color: yellow;
+	text-shadow: 1px 1px 1px gold;	/*横方向 縦方向 ぼかし 影の色;*/
+}
+
+section{
+	width:930px;
+	background-color:lavender;
+	color:#000;
+	margin:10px;
+}
+
+article{
+	width:910px;
+	background-color:lavender;
+	color:#000;
+	margin:10px;
+	overflow: auto; /*floatを使用した場合の、画像回り込み解除のために加えている*/
+}
+
+article h1{
+	padding:10px;
+	letter-spacing:0.3em; /*文字の間隔を指定する。em は、文字の高さを1とした単位。*/
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+article h2{
+	color:navy;
+	padding:10px;
+	letter-spacing:0.1em;
+	font-size:17px;
+	margin-bottom:10px;
+}
+
+article img{
+	margin:10px;
+
+}
+
+article img.right{
+	float:right;
+}
+
+article p{
+	line-height:1.4; /*行間の高さを指定する。1行の高さが文字サイズの1.4倍となり、0.4文字分の行間が空く。*/
+	margin:10px;
+}
+
+table.profile {
+	width: 100%;
+	margin:20px 0px 50px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-spacing:0px;
+}
+
+table.profile tr th,table.profile tr td {
+	font-size: 13px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 7px;
+}
+
+table.profile tr th {
+	background: aliceblue;
+	width: 50px;
+}
+
+footer{
+	width:930px;
+	height:25px;
+	color:#000;
+	background-color:lavender;
+	margin:30px 10px 10px 10px;
+	font-size:12px;
+	text-align:right;
+}

@@ -1,0 +1,47 @@
+.sbutton {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 0;
+    min-width: 80px;
+    background-color: #ffffff;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s background-color;
+    font-size: 12px;
+}
+.sbutton figure {
+    margin: 0;
+}
+.sb_hatena {
+    color: #365899;
+    fill: #365899;
+}
+.sb_pocket {
+    color: #EF3F56;
+    fill: #EF3F56;
+}
+.sb_twitter {
+    color: #1DA1F2;
+    fill: #1DA1F2;
+}
+.sb_facebook {
+    color: #3B5998;
+    fill: #3B5998;
+}
+.sbutton:hover figure {
+    fill: #fff;
+    color: #fff;
+}
+.sb_hatena:hover {
+    background-color: #365899;
+}
+.sb_pocket:hover {
+    background-color: #EF3F56;
+}
+.sb_twitter:hover {
+    background-color: #1DA1F2;
+}
+.sb_facebook:hover {
+    background-color: #3B5998;
+}
