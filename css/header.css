@@ -35,7 +35,9 @@
   height: 500px;
   margin: auto;
   display: table;
-  background-image: url(https://i.pinimg.com/originals/24/fd/e3/24fde39a1e64f4a671ca3f5d97680b73.jpg);
+  /*background-image: url(https://i.pinimg.com/originals/24/fd/e3/24fde39a1e64f4a671ca3f5d97680b73.jpg);*/
+  background-image: url(../imgs/sa10.png);
+  background-size: 35%;
 }
 
 h2 {

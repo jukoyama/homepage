@@ -1,6 +1,69 @@
-/* 左サブメニューCSS */
-div#submenuleft {
-  float: left;
+/* profile */
+h3 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.content-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.detail {
+  font-family: cursive;
+  color: black;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.belong p {
+  line-height: 10px;
+}
+
+#link-profile {
+  line-height: 10px;
+  color: rgba(214,78,128,.4);
+}
+
+#link-profile:hover {
+  border-bottom: 1px solid #d64e80;
+  padding-bottom: 3px;
+  color: #d64e80;
+}
+
+/* contact */
+h4 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#link-profile {
+  float: right;
+}
+
+.content-body {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/* スクロールした時の動き */
+.name {
+  opacity: 0;
+	transform: translate(0,60px);
+	-webkit-transform: translate(0,60px);
+}
+
+.mv07 {
+  opacity: 1.0;
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
 }
 
 .social a {
@@ -10,16 +73,22 @@ div#submenuleft {
   vertical-align: middle;
 }
 
-/*figure {
-  width: 32;
-  height: 32;
-}*/
+
 
 /* 中央プロフィール */
-div#content-middle {
+div#content-left {
   float: left;
 }
 
 div#submenuright {
-  float: right;
+}
+
+.calender {
+  background-color: white;
+}
+
+.map img{
+  width: 50%;
+  height: auto;
+  text-align: center;
 }

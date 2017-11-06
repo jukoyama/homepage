@@ -9,10 +9,14 @@
     <link href="css/menu.css" rel="stylesheet" types="text/css">
     <link href="css/icon2.css" rel="stylesheet" types="text/css">
     <link href="css/name.css" rel="stylesheet" types="text/css">
+    <link href="css/calender.css" rel="stylesheet" types="text/css">
     <script src="js/homepage.js"></script>
     <script src="js/icon.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
 
   <body>
 
@@ -21,9 +25,9 @@
       <div class="fixheader">
         <h1>MY HOMEPAGE</h1>
         <ul class="menu">
-          <li><a href="/">HOME</a></li>
+          <li><a href="./index.html">HOME</a></li>
           <li><a href="./profile.html">PROFILE</a></li>
-          <li><a href="#">ACTIVITY</a></li>
+          <li><a href="./activity.html">ACTIVITY</a></li>
           <li><a href="./hobby.html">HOBBY</a></li>
         </ul>
       </div>
@@ -38,47 +42,75 @@
     <div class="content bg">
       <div class="content-body">
 
-        <!-- SHARE_SNS -->
-        <div id="submenuleft">
-
-          <div class="social">
-
-               <!-- facebookリンク -->
-                  <a href="#" class="link facebook" target="_parent">
-                    <i class="fa fa-facebook fa-large"></i>
-                  </a>
-
-               <!-- pocketボタン -->
-                  <a href="/" class="link pocket" target="_parent">
-                    <i class="fa fa-pocket fa-large"></i>
-                  </a>
-
-                <!-- twitterボタン -->
-                  <a href="https://twitter.com/share" class="link twitter" target="_parent">
-                    <i class="fa fa-twitter fa-large"></i>
-                  </a>
-
-                <!-- googleボタン　-->
-                  <a href="https://plus.google.com" class="link google-plus" target="_parent">
-                    <i class="fa fa-google-plus fa-large"></i>
-                  </a>
+        <!-- 自己紹介- -->
+        <div id="content-left">
+          <h3>PROFILE</h3>
+          <div class="name mv07">
           </div>
-
         </div>
 
-        <!-- コンテンツ中央- -->
-        <div id="content-middle">
-          <div class="name">
-            <p>1620542 山本充子</p>
+        <!-- 真ん中のコンテンツ -->
+        <div class="content-middle">
+
+          <div class="detail">
+
+              <div class="belong">
+
+                <p>山本　充子</p>
+                <p>お茶の水女子大学　理学部　情報科学科</p>
+                <p>2016年入学</p>
+                <a href="./profile.html" id="link-profile">See More...</a>
+               </br>
+
+              </div>
+
+              <h4>SNS LINK</h4>
+
+
+              <div class="social">
+
+                   <!-- facebookリンク -->
+                      <a href="#" class="link facebook" target="_parent">
+                        <i class="fa fa-facebook fa-large"></i>
+                      </a>
+
+                   <!-- pocketボタン -->
+                      <a href="/" class="link pocket" target="_parent">
+                        <i class="fa fa-pocket fa-large"></i>
+                      </a>
+
+                    <!-- twitterボタン -->
+                      <a href="https://twitter.com/share" class="link twitter" target="_parent">
+                        <i class="fa fa-twitter fa-large"></i>
+                      </a>
+
+                    <!-- googleボタン　-->
+                      <a href="https://plus.google.com" class="link google-plus" target="_parent">
+                        <i class="fa fa-google-plus fa-large"></i>
+                      </a>
+              </div>
+
           </div>
+
         </div>
 
         <!-- 右のサブメニュー -->
         <div id="submenuright">
           <!-- カレンダー -->
-          <div id="calender">calender</div>
+          <div class="calender">
+            <script async name='freecals' id='calinc-mem76081-height300'type="text/javascript"src="https://freecalend.com/jstac/calinc.js"></script>
+            <a target='_blank' href='11月 https://freecalend.com/open/mem76081_nopopon' id='fctargetlink'>フリーカレンダーを見る</a>
+
+            <!-- <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=is.ocha.ac.jp_t2h22f4207puskn4djv8h690so%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Asia%2FTokyo"
+            style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe> -->
+
+          </div>
           <!-- 地図 -->
-          <div id="map">map</div>
+          <div class="map">
+          </br>
+            <img src="./imgs/runninng.png" ></img>
+          </div>
+
         </div>
 
       </div>
