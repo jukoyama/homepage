@@ -1,0 +1,71 @@
+.mybackground p {
+  text-align: center;
+}
+
+table.myb {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+}
+
+table.myb th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+table.myb td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+.hoge {
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  float: bottom;
+}
+
+
+/*.content-middle p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content-middle {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-middle {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  margin:2em 0;
+  padding: 0.5em 1.5em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.content-middle:before, .content-middle:after {
+  content: ' ';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+
+.content-middle:before {left: 10px;}
+
+.content-middle:after { right: 10px;}*/

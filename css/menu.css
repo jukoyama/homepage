@@ -81,6 +81,8 @@ div#content-left {
 }
 
 div#submenuright {
+  margin: auto 0;
+  text-align: center;
 }
 
 .calender {

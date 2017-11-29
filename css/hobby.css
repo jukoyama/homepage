@@ -1,0 +1,44 @@
+.content-body {
+  padding: 60px 200px;
+}
+
+.hobby1 {
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  color: #ff7d6e;
+  /*background: #fff8e8;*/
+  background: #ffebe9;
+  /*border-left: solid 10px #ffc06e;*/
+  border-left: solid 10px #ff7d6e;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hobby2 {
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  color: #474747;
+  background: whitesmoke;
+  border-left: double 7px #4ec4d3;
+  border-right: double 7px #4ec4d3;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hobby1 p {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hobby-img {
+  float: left;
+  margin-right: 10px;
+}
+
+.hobby-content {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: 0;
+}

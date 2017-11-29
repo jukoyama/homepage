@@ -65,6 +65,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top .6s ease;
+    color: #d64e80;
 }
 
 #header[data-fixmode="up"] .menu {
