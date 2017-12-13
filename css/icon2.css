@@ -1,4 +1,16 @@
 /* 全てのリンクボタン */
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  padding-left: 0;
+  display:table;
+  text-align:center;
+  vertical-align: middle;
+}
+
 .social .link {
   display: inline-block; /* インラインボックスの生成 */
   vertical-align: middle; /* 縦に真ん中 */
@@ -6,7 +18,7 @@
   width: 50px; /* 横幅 */
   height: 50px; /* 縦幅 */
   border-radius: 50%; /* 枠に丸み */
-  border: 2px dashed white; /* 白い点線の枠線 */
+  border: 2px dotted rgba(214,78,128,.4); /* 白い点線の枠線 */
   background-clip: content-box; /* padding領域も含まない、内容部分のみに表示 */
   padding: 2px; /* 内側の余白 */
   transition: .5s; /* 時間的変化 */
@@ -34,9 +46,9 @@
   transform: translate(0px) rotate(360deg); /* 360度回転 */
 }
 
-/* google-plusSNSボタン */
+/* githubSNSボタン */
 .social .link.google-plus {
-  background-color: tomato;
+  background-color: black;
   color: white;
 }
 
@@ -46,11 +58,13 @@
   color: white;
 }
 
-/* pocketSNSボタン */
+/* InstagramSNSボタン */
 .social .link.pocket {
   background-color: #EF3F56;
   color: white;
 }
+
+
 /*  facebookSNSボタン */
 .social .link.facebook {
   background-color: #3B5998;

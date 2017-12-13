@@ -1,4 +1,5 @@
 @charse "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 * {
     box-sizing: border-box;
@@ -9,6 +10,9 @@ html, body {
 }
 
 body {
+    /*font-family: "Lato", “游ゴシック Medium”, “Yu Gothic Medium”, sans-serif;*/ /*全体のフォント*/
+    font-family: "Lato", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: lighter;
     position: relative;
     margin: 0;
 }
@@ -24,11 +28,17 @@ a {
 
 .content.bg {
     background: linear-gradient(135deg, #ffdbdb, #b4e6e8);
+    /*background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);*/
+    /*background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);*/
+    position: relative;
+    z-index: 1;
 }
 
 .content-body {
     padding: 60px 60px;
     line-height: 2em;
+    position: relative;
+    z-index: 2;
 }
 
 .demo1 h1 {
@@ -77,4 +87,16 @@ a {
 
 h1 {
     margin: 0;
+}
+
+#link-profile {
+  line-height: 1.5;
+  color: rgba(214,78,128,.4);
+  float: right;
+}
+
+#link-profile:hover {
+  border-bottom: 1px solid #d64e80;
+  padding-bottom: 3px;
+  color: #d64e80;
 }

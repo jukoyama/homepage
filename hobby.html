@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>HOBBY</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansjp.css' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link href="css/hobby.css" rel="stylesheet" types="text/css">
+    <link href="css/hobby.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/header.js"></script>
   </head>
 
   <body>
@@ -22,7 +27,13 @@
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./profile.html">PROFILE</a></li>
           <li><a href="./activity.html">ACTIVITY</a></li>
-          <li><a href="./hobby.html">HOBBY</a></li>
+          <li class="ttl"><a href="./hobby.html">HOBBY</a>
+            <ul class="hobby-menu">
+              <li><a href="./museum.html">trip</a></li>
+              <br/>
+              <li><a href="./museum.html">food</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -36,9 +47,13 @@
                 <img src="./imgs/museum.png" style="width: 200px; height: 200px;"></img>
               </div>
               <div class="hobby-content">
-                <h1>美術館巡り</h1></br>
-                <p>私は美術館巡りが好きです</p>
+                <h1 style="color:#d64e80;">旅行・美術館巡り</h1></br>
+                <p>私は旅行や美術館巡りが好きです。</p>
+                <p>六本木の森美術館や上野の東京都美術館によく行きます。</p>
+                <p>また、今年(2017年)パリに行ったときにはルーブル美術館、オルセー美術館などに訪れました。</p>
               </div>
+              <a href="./museum.html" id="link-profile">See Pictures...</a>
+            </br>
         </div>
 
       </br>
@@ -48,9 +63,12 @@
                 <img src="./imgs/dish.png" style="width: 200px; height: 200px;"></img>
               </div>
               <div class="hobby-content">
-                <h1>食べること</h1></br>
-                <p>食べることが好きです</p>
+                <h1 style="color:#d64e80;">食べること</h1></br>
+                <p>食べることが大好きです。月１くらいのペースで食べ放題に行きます。</p>
+                <p>よければ誘ってください。</p>
               </div>
+              <a href="./activity.html" id="link-profile">See Pictures...</a>
+            </br>
         </div>
 
 

@@ -7,4 +7,7 @@ $(function() {
 			$(this).stop().removeClass('mv07');
 		}
 	});
+
+	$("#datepicker").datepicker();
+
 });

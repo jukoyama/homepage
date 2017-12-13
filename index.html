@@ -6,17 +6,31 @@
     <title>HOME</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link href="css/menu.css" rel="stylesheet" types="text/css">
-    <link href="css/icon2.css" rel="stylesheet" types="text/css">
-    <link href="css/name.css" rel="stylesheet" types="text/css">
-    <link href="css/calender.css" rel="stylesheet" types="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/icon2.css" rel="stylesheet" type="text/css">
+    <link href="css/name.css" rel="stylesheet" type="text/css">
+    <link href="css/calender.css" rel="stylesheet" type="text/css">
+    <link href="css/profile.css" rel="stylesheet" type="text/css">
     <script src="js/homepage.js"></script>
     <script src="js/icon.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansjp.css' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" > -->
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/menu.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
 
   <body>
 
@@ -28,7 +42,13 @@
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./profile.html">PROFILE</a></li>
           <li><a href="./activity.html">ACTIVITY</a></li>
-          <li><a href="./hobby.html">HOBBY</a></li>
+          <li class="ttl"><a href="./hobby.html">HOBBY</a>
+            <ul class="hobby-menu">
+              <li><a href="./museum.html">trip</a></li>
+              <br/>
+              <li><a href="./museum.html">food</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -42,74 +62,113 @@
     <div class="content bg">
       <div class="content-body">
 
-        <!-- 自己紹介- -->
-        <div id="content-left">
-          <h3>PROFILE</h3>
-          <div class="name mv07">
-          </div>
-        </div>
+        <!-- 左のコンテンツ(自己紹介)- -->
+        <div id="content-left" class="spc">
+          <h4>PROFILE</h4>
+          <!-- プロフィール画像 -->
+          <div style="width:250px; height:250px;"class="name mv07"></div>
 
-        <!-- 真ん中のコンテンツ -->
-        <div class="content-middle">
-
+          <!-- プロフィールの中身 -->
           <div class="detail">
 
               <div class="belong">
 
-                <p>山本　充子</p>
-                <p>お茶の水女子大学　理学部　情報科学科</p>
-                <p>2016年入学</p>
-                <a href="./profile.html" id="link-profile">See More...</a>
+                <p> 山本　充子 </p>
+                <p>お茶の水女子大学 理学部 情報科学科</p>
+                <p>2016年度入学</p>
+                <a href="./profile.html" id="link-profile">See More Profile...</a>
                </br>
 
               </div>
-
-              <h4>SOCIAL LINKS</h4>
 
 
               <div class="social">
 
                    <!-- facebookリンク -->
-                      <a href="#" class="link facebook" target="_parent">
+                      <a href="https://www.facebook.com/profile.php?id=100008024434965" class="link facebook" target="_parent">
                         <i class="fa fa-facebook fa-large"></i>
                       </a>
 
-                   <!-- pocketボタン -->
-                      <a href="/" class="link pocket" target="_parent">
-                        <i class="fa fa-pocket fa-large"></i>
+                   <!-- Instagramボタン -->
+                      <a href="https://www.instagram.com/yama.jsc/" class="link pocket" target="_parent">
+                        <i class="fa fa-instagram fa-large"></i>
                       </a>
 
                     <!-- twitterボタン -->
-                      <a href="https://twitter.com/share" class="link twitter" target="_parent">
+                      <a href="https://twitter.com/sunnyoronanm" class="link twitter" target="_parent">
                         <i class="fa fa-twitter fa-large"></i>
                       </a>
 
-                    <!-- googleボタン　-->
-                      <a href="https://plus.google.com" class="link google-plus" target="_parent">
-                        <i class="fa fa-google-plus fa-large"></i>
+                    <!-- githubボタン　-->
+                      <a href="https://github.com/jukoyama" class="link google-plus" target="_parent">
+                        <i class="fa fa-github-alt fa-large"></i>
                       </a>
               </div>
+
+              <p style="color: tomato">Gmail : g1620542@is.ocha.ac.jp</p>
 
           </div>
 
         </div>
 
-        <!-- 右のサブメニュー -->
+        <!-- 真ん中のコンテンツ -->
+        <div style="margin-top: 0; margin-left:100px;" id="content-middle">
+
+          <!-- ギャラリー -->
+          <div class="m-g">
+            <span class="m-g-title">Gallery</span>
+            <img style="width: 100px; height: 100px; margin-right: 20px;" src="./imgs_museum/Mon.JPG"></img>
+            <div style="display:block; margin-right: 20px;" class="m-g-content">
+              <p style="color: #b3b3b3">2017 August</p>
+              <p>My Trip to Paris</p>
+            </br>
+            </div>
+            <a style="margin-top: 100px;" href="./museum.html" id="link-profile">See Pictures...</a>
+          </div>
+
+          <!-- 最近の活動 -->
+          <div class="m-g">
+            <span class="m-g-title">Recent Activity</span>
+            <table class="myb">
+              <tr>
+                <th scope="row">2017.12</th>
+                <td>三多摩地区学生バドミントン大会</br>シングルス・ダブルス</td>
+              </tr>
+              <tr>
+                <th scope="row">2017.11</th>
+                <td>関東学生バドミントン新人選手権大会</br>ダブルス</td>
+              </tr>
+              <tr>
+                <th scope="row">2017.10</th>
+                <td>理工系大会</br>シングルス・ダブルス</td>
+              </tr>
+              <tr>
+                <th scope="row">20017.08</th>
+                <td>HACKU2017東京</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <!-- 右のコンテンンツ -->
         <div id="submenuright">
           <!-- カレンダー -->
-          <div class="calender">
+          <div id="datepicker" class="map"></div>
+
+
+          <!-- カレンダー -->
+           <!-- <div class="calender">
             <script async name='freecals' id='calinc-mem76081-height300'type="text/javascript"src="https://freecalend.com/jstac/calinc.js"></script>
             <a target='_blank' href='11月 https://freecalend.com/open/mem76081_nopopon' id='fctargetlink'>フリーカレンダーを見る</a>
 
-            <!-- <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=is.ocha.ac.jp_t2h22f4207puskn4djv8h690so%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Asia%2FTokyo"
-            style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe> -->
+          </div> -->
 
-          </div>
-          <!-- 地図 -->
-          <div class="map">
-          </br>
-            <img src="./imgs/runninng.png" ></img>
-          </div>
+          <!-- activityへのリンク -->
+            <div style="margin-top: 50px;">
+             <img style="animation-iteration-count: infinite;" src="./imgs/output.gif"></img>
+             <a class="link-act" href="./activity.html" id="link-profile">See Activity...</a>
+           </div>
 
         </div>
 

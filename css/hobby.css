@@ -2,33 +2,15 @@
   padding: 60px 200px;
 }
 
-.hobby1 {
-  padding: 0.5em 1em;
-  margin: 2em auto;
-  color: #ff7d6e;
-  /*background: #fff8e8;*/
-  background: #ffebe9;
-  /*border-left: solid 10px #ffc06e;*/
-  border-left: solid 10px #ff7d6e;
-  overflow: hidden;
-  text-align: center;
-}
-
 .hobby2 {
   padding: 0.5em 1em;
   margin: 2em auto;
   color: #474747;
-  background: whitesmoke;
-  border-left: double 7px #4ec4d3;
-  border-right: double 7px #4ec4d3;
+  /*background: whitesmoke;*/
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-left: double 7px #d64e80;
+  border-right: double 7px #d64e80;
   overflow: hidden;
-  text-align: center;
-}
-
-.hobby1 p {
-  font-family: cursive;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -38,7 +20,33 @@
 }
 
 .hobby-content {
-  padding-left: 200px;
+  padding-left: 300px;
   padding-right: 200px;
   margin: 0;
+}
+
+.hobby-x {
+    position: relative;
+    margin: 2em 0;
+    padding: 45px 10px 45px;
+    border: solid 2px #d64e80;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    line-height: 1.5;
+}
+.hobby-x .hobby-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    line-height: 1.5;
+    vertical-align: middle;
+    font-size: 25px;
+    background: #d64e80;
+    color: #ffffff;
+}
+.hobby-x p {
+    text-align: center;
+    margin: 1em;
+    padding: 0;
 }

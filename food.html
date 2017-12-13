@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>TRIP</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/museum.css" rel="stylesheet" type="text/css">
+    <link href="css/museum2.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://winofsql.jp/js/jquery.balloon.min.051.js"></script>
+    <script src="js/museum.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/header.js"></script>
+  </head>
+
+  <body>
+
+    <!-- メニューヘッダー -->
+    <div id="header" class="demo4" data-fixmode="top">
+      <div class="fixheader">
+        <h1>HOBBY - trip</h1>
+        <ul class="menu">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./profile.html">PROFILE</a></li>
+          <li><a href="./activity.html">ACTIVITY</a></li>
+          <li class="ttl"><a href="./hobby.html">HOBBY</a>
+            <ul class="hobby-menu">
+              <li><a href="./museum.html">trip</a></li>
+              <br/>
+              <li><a href="./museum.html">food</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- メインボディ -->
+    <div class="content bg" style="padding-top: 100px;">
+      <div class="content-body">
+
+        <p style="text-align: center;">今年に行ったお店です。</p>
+
+        <div id="top"></div>
+        <section class="gallery">
+          <!-- ギャラリー -->
+          <div class="row">
+            <ul>
+              <a href="#" class="close"></a> <!-- 閉じるボタン -->
+
+              <!-- ノートルダム大聖堂 -->
+              <li>
+                <a class="Tipper" href="#item04">
+                  <img src="./imgs_museum/nort.JPG">
+                  <div class="mask">
+                    <div class="caption">ノートルダム大聖堂</br>(Cathédrale Notre-Dame de Paris)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- コンコルド広場 -->
+              <li>
+                <a class="image" href="#item05">
+                  <img src="./imgs_museum/Concorde.JPG" alt="">
+                  <div class="mask">
+                    <div class="caption">コンコルド広場</br>(Place de la Concorde)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 凱旋門 -->
+              <li>
+                <a class="image01" href="#item06">
+                  <img class="lo-i" style="height: 197px; margin-left: 20%;" src="./imgs_museum/Gai.JPG">
+                  <div class="mask">
+                    <div class="caption">凱旋門</br>(Triumphal arch)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- オルセー美術館 -->
+              <li>
+                <a class="image01" href="#item12">
+                  <img style="height: 197px; margin-left: 20%;" src="./imgs_museum/orse.JPG">
+                  <div class="mask">
+                    <div class="caption">オルセー美術館</br>(Musée d'Orsay)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- エッフェル塔 -->
+              <li>
+                <a class="image" href="#item07">
+                  <img src="./imgs_museum/effel.JPG">
+                  <div class="mask">
+                    <div class="caption">エッフェル塔</br>(La tour Eiffel)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- モンマルトルの丘 -->
+              <li>
+                <a class="image" href="#item11">
+                  <img src="./imgs_museum/Mon.JPG">
+                  <div class="mask">
+                    <div class="caption">モンマルトル</br>(Montmartre)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- モンサンミッシェル -->
+              <li>
+                <a class="image" href="#item08">
+                  <img src="./imgs_museum/Mons.JPG">
+                  <div class="mask">
+                    <div class="caption">モンサンミッシェル</br>(Le Mont-Saint-Michel)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- ベルサイユ宮殿 -->
+              <li>
+                <a class="image" href="#item09">
+                  <img src="./imgs_museum/Ver.JPG">
+                  <div class="mask">
+                    <div class="caption">ベルサイユ宮殿</br>(Palais de Versailles)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- ルーブル美術館 -->
+              <li>
+                <a class="image" href="#item10">
+                  <img src="./imgs_museum/Rou.JPG">
+                  <div class="mask">
+                    <div class="caption">ルーブル美術館</br>(Musée du Louvre)</div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- その他の写真 -->
+              <li>
+                <a class="image" href="#item03">
+                  <img src="./imgs_museum/paris.JPG">
+                  <div class="mask">
+                    <div class="caption">その他のパリの写真</div>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- その他の写真 -->
+          <div id="item03" class="port">
+
+            <div class="row">
+
+                <!-- パリ市街 -->
+                <div class="left-d clearbox">
+              		<div class="row">
+              			<div class="description">
+              				<h1>PARIS</h1>
+              				<p>これはパリの市街の写真です。</p>
+              			</div>
+              				<img src="./imgs_museum/paris.JPG" alt="">
+              		</div>
+                </div>
+
+                <!-- お店 -->
+                <div class="right-d clearbox">
+                  <img style="float: left;" src="./imgs_museum/shop.JPG" alt="">
+                  <div class="description">
+                    <h1>出店</h1>
+                    <p>ノートルダム大聖堂の近くの出店です。とても美味しそうでした。</p>
+                  </div>
+                </div>
+
+                <!-- マドレーヌ寺院 -->
+                <div class="left-d clearbox">
+              		<div class="row">
+              			<div class="description">
+              				<h1>マドレーヌ寺院</br>Église de la Madeleine</h1>
+              				<p>聖女マグダラのマリアを守護聖人とするカトリック教会です。バスに乗りながら見たので、中には入っていません。</p>
+              			</div>
+              				<img src="./imgs_museum/Mad.JPG" alt="">
+              		</div>
+                </div>
+
+                <!-- オペラ・ガルニエ -->
+                <div class="right-d clearbox">
+                  <img style="float: left;" src="./imgs_museum/gar.JPG" alt="">
+                  <div class="description">
+                    <h1>オペラ・ガルニエ</br>Palais Garnier</h1>
+                    <p>パリ国立オペラの公演会場の一つです。私の行った時期はちょうどみんなバカンスに行く時期だったため、公演は行われていませんでした。</p>
+                  </div>
+                </div>
+
+                <!-- ギャラリー・ラファイエット -->
+                <div class="left-d clearbox">
+              		<div class="row">
+              			<div class="description">
+              				<h1>ギャラリー・ラファイエット</br>Galeries Lafayette</h1>
+              				<p>フランスの百貨店の一つです。</p>
+              			</div>
+              				<img src="./imgs_museum/gya.JPG" alt="">
+              		</div>
+                </div>
+
+                <!-- 塩 -->
+                <div class="right-d clearbox">
+                  <img style="float: left;" src="./imgs_museum/salt.JPG" alt="">
+                  <div class="description">
+                    <p>百貨店にあった塩のコーナーです。いろんな塩がありました。</p>
+                  </div>
+                </div>
+
+                <!-- マカロン -->
+                <div class="left-d clearbox">
+              		<div class="row">
+              			<div class="description">
+              				<h1>マカロン</h1>
+              				<p>Pierre Herméのマカロンを本場のパリで買いました。</p>
+              			</div>
+              				<img src="./imgs_museum/mac.JPG" alt="">
+              		</div>
+                </div>
+
+            	</div>
+
+            </div>
+
+          <!-- ノートルダム大聖堂 -->
+          <div id="item04" class="port">
+
+            <div class="left-d clearbox">
+        		    <div class="row">
+            			<div class="description">
+            				<h1>ノートルダム大聖堂</br>(Cathédrale Notre-Dame de Paris)</h1>
+            				<p>これは世界遺産の一つです。ゴシック建築の一つと言われています。</p>
+            			</div>
+            				<img src="./imgs_museum/nort.JPG" alt="">
+            		</div>
+            </div>
+
+        	</div>
+
+          <!-- コンコルド広場 -->
+          <div id="item05" class="port">
+
+            <div class="left-d clearbox">
+              <div class="row">
+                <div class="description">
+                  <h1>コンコルド広場</br>Place de la Concorde</h1>
+                  <p>このコンコルド広場は、昔は通称「ギロチン広場」と言われていた。</p>
+                  <p>フランス革命後にここは処刑場となったのだ。ルイ16世とマリー・アントワネットを始め、1300人以上の人々が、この広場で処刑されたという。</p>
+                  <p>この噴水はバチカンのサン・ピエトロ広場にある噴水を模して造られたものだと言われています。</p>
+                </div>
+                  <img src="./imgs_museum/Concorde.JPG" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 凱旋門 -->
+          <div id="item06" class="port">
+
+            <div class="left-d clearbox">
+              <div class="row">
+                <div class="description">
+                  <h1>エトワール凱旋門</br>Arc de triomphe de l'Étoile</h1>
+                  <p>この凱旋門を中心に、12本の通りが放射状に延びておりその形が地図上で光り輝く「星=étoile」のように見えるので、この広場は「星の広場（エトワール広場）と呼ばれていた。</p>
+                  <p>アウステルリッツの戦いに勝利した記念に1806年、ナポレオン・ボナパルトの命によって建設が始まった。</p>
+                </div>
+                  <img src="./imgs_museum/Gai.JPG" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- エッフェル塔 -->
+          <div id="item07" class="port">
+
+            <div class="left-d clearbox">
+              <div class="row">
+                <div class="description">
+                  <h1>エッフェル塔</br>La tour Eiffel</h1>
+                  <p>当時産業革命により、高層建築が建築され、国家間で高さ競争が繰り広げられました。</p>
+                  <p>1889年にパリ万博のために設計しました。</p>
+                </div>
+                  <img src="./imgs_museum/effel.JPG" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- モンサンミッシェル -->
+          <div id="item08" class="port">
+
+            <div class="left-d clearbox">
+              <div class="row">
+                <div class="description">
+                  <h1>Le Mont-Saint-Michel</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                </div>
+                  <img src="./imgs_museum/Mons.JPG" alt="">
+              </div>
+            </div>
+
+            <div class="right-d clearbox">
+              <div class="row">
+                <img src="./imgs_museum/omu.JPG" alt="">
+                <div class="description">
+                  <h1>Lunch</h1>
+                  <p>これは、モンサンミッシェルで食事したオムライスです。横には林檎酒があります。とても美味しかったです。</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ベルサイユ宮殿 -->
+          <div id="item09" class="port">
+
+            <div class="row">
+
+              <!-- ベルサイユ宮殿 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>ベルサイユ宮殿</br>Palais de Versailles</h1>
+                  <p>私がベルサイユ宮殿に行ったとき、ルーブル美術館が休館日だったため、とても並んでいました。入るのに３、４時間かかりました。</p>
+                </div>
+                  <img src="./imgs_museum/Ver.JPG" alt="">
+              </div>
+
+              <!-- マリーアントワネットの肖像画 -->
+              <div class="right-d clearbox long">
+                <img style="float: left;" src="./imgs_museum/mary01.JPG" alt="">
+                <div class="description">
+                  <h1>マリー・アントワネットとマリー・テレーズ王女、ルイ王太子</br>Queen Marie Antoinette of France and two of her Children Walking in The Park of Trianon</h1>
+                  <p>(by Adolf Ulrik Wertmüller, 1785)</p>
+                  <p>これは有名なマリーアントワネットとその子供たちの様子です。</p>
+                </div>
+              </div>
+
+              <!-- 鏡の間 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>鏡の間</br>Galerie des Glaces (Hall of Mirrors)</h1>
+                  <p>この場所を全体で撮りたかったのですが、人が多かったため、人が邪魔になりうまく取れませんでした。鏡がたくさんあるところも撮りたかったのですが、うまく撮れませんでした。</p>
+                </div>
+                  <img src="./imgs_museum/mirror.JPG" alt="">
+              </div>
+
+              <!-- 戦闘の回廊 -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/war.JPG" alt="">
+                <div class="description">
+                  <h1>戦闘の回廊</br>Galerie des Batailles</h1>
+                  <p>ここでは、フランス軍の歴史におけるもっとも重要な出来事を表す絵画が順番に並んでいます。一つ一つ見応えがあります。</p>
+                </div>
+              </div>
+
+              <!-- ヨークタウンの戦い -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>ヨークタウンの戦い</br>George washington in the battle of yorktown</h1>
+                  <p>戦闘の回廊にある絵の一つです。</p>
+                  <p>これはアメリカ独立戦争を事実上集結させたヨークタウンの戦いの時のものです。この肖像画はイギリス軍に対する作戦をフランス軍のロシャボー将軍と一緒に大陸軍のワシントン将軍(のちのアメリカ大統領)と会談している様子です。</p>
+                </div>
+                  <img src="./imgs_museum/portrait01.JPG" alt="">
+              </div>
+
+              <!-- ベルサイユ宮殿：庭園-->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/garden.JPG" alt="">
+                <div class="description">
+                  <h1>庭園</br>Orangery in the ground of the Palace of Versailles, outside Paris</h1>
+                  <p>ここはベルサイユ宮殿の庭です。とても広く全部は見切れませんでした。</p>
+                </div>
+              </div>
+
+              <!-- マリーアントワネットの肖像画-->
+              <div class="left-d clearbox long">
+                <div class="description">
+                  <h1>マリー･アントワネット</br>Marie Antoinette à la Rose</h1>
+                  <p>(by Elisabeth Vigée-Lebrun, 1783)</p>
+                  <p>マリーアントワネットが28歳ごろの絵です。</p>
+                </div>
+                  <img style="float: right" src="./imgs_museum/mary02.JPG" alt="">
+              </div>
+
+              <!-- マリーアントワネットの離れ -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/mary03.JPG" alt="">
+                <div class="description">
+                  <h1>村里の農家（を模して建てられたもの）</br>Le moulin vu du côté du lac</h1>
+                  <p>アントワネットが生前に一人静かに田園生活の風情を楽しんだ場所で宮殿で最も愛した場所と言われています。</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- ルーブル美術館 -->
+          <div id="item10" class="port">
+
+            <div class="row">
+              <!-- ルーブル美術館(建物) -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>Musée du Louvre</h1>
+                  <p>ルーブル美術館は世界最大級の美術館であると言われているだけあり、とても広く展示品も多く1日では周りきれませんでした。私は、3日に分けて行きました。それでも、見たかった絵画を全ては見られませんでした。</p>
+                  <p>Nintendo3DSを有料で貸し出しており、それを見ながら回っている人が多かったです。ルーブルの構造は複雑で地図を見ながら絵画を探してもなかなかみつけられません。もし、行く機会があったら事前に見たい絵画の位置と場所を確認して行くことをおすすめします。</p>
+                  <p>ここから先は撮った絵画を貼って行きます。</p>
+                </div>
+                <img src="./imgs_museum/Rou.JPG" alt="">
+              </div>
+
+              <!-- ピエロ -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/piero.JPG" alt="">
+                <div class="description">
+                  <h1>ピエロ</br>Pierrot</h1>
+                  <p>(by Jean-Antoine Watteau, 1719)</p>
+                </div>
+              </div>
+
+              <!-- マラーの死 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>マラーの死</br>La Mort de Marat</h1>
+                  <p>(by Jacques-Louis David, 1793)</p>
+                </div>
+                <img src="./imgs_museum/mara.JPG" alt="">
+              </div>
+
+              <!-- ミロのビーナス -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/miro.JPG" alt="">
+                <div class="description">
+                  <h1>ミロのビーナス</br>Vénus de Milo</h1>
+                  <p>(by Alexandros of Antioch, 130 ~ 100 BC)</p>
+                </div>
+              </div>
+
+              <!-- サモトラケのニケ -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>サモトラケのニケ</br>Victoire de Samothrace</h1>
+                  <p>(c. 200–190 BC)</p>
+                </div>
+                <img src="./imgs_museum/nike.JPG" alt="">
+              </div>
+
+              <!-- 洗礼者聖ヨハネ -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/da.JPG" alt="">
+                <div class="description">
+                  <h1>洗礼者聖ヨハネ</br>John the Baptist</h1>
+                  <p>(by Leonardo da Vinci, c. 1513–16)</p>
+                  <p>レオナルド・ダ・ヴィンチの絵画です。こんな間近で見られるとは驚きでした。</p>
+                </div>
+              </div>
+
+              <!-- モナ・リザ -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>モナ・リザ</br>Mona Lisa</h1>
+                  <p>(by Leonardo da Vinci, c. 1513–16)</p>
+                  <p>有名な絵画なだけあって、この絵画の周りにたくさん人がいました。なかなか写真が取れなくようやく撮れたのがこれでした。</p>
+                </div>
+                <img src="./imgs_museum/monariza.JPG" alt="">
+              </div>
+
+              <!-- 四季 -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/season.JPG" alt="">
+                <div class="description">
+                  <h1>四季</br>Four Seasons</h1>
+                  <p>(by Giuseppe Arcimboldo, 1573)</p>
+                  <p>この絵画の人物は野菜や果物などで構成されています。この絵画は何枚か書かれており、最古のものはウィーンの美術史美術館で展示されています。</p>
+                </div>
+              </div>
+
+              <!-- マルガリータ王女 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>マルガリータ王女の母</br>Maria Anna von Österreich</h1>
+                  <p>(by Diego Rodríguez de Silva y Velázquez)</p>
+                  <p>ベラスケスという宮廷画家によって書かれた肖像画です。この画家によって描かれたマルガリータ王女の肖像画があるはずなのですが、見つけることができませんでした。</p>
+                </div>
+                <img src="./imgs_museum/por02.JPG" alt="">
+              </div>
+
+              <!-- ルイ14世の肖像 -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/rui.JPG" alt="">
+                <div class="description">
+                  <h1>ルイ14世の肖像</br>Louis XIV</h1>
+                  <p>(by Hyacinthe Rigaud, 1638－1715)</p>
+                  <p>ルイ14世の公式肖像画家リゴーによって描かれた。当時63歳で、王の絶対主義と威厳そのもののイメージを整えた。</p>
+                </div>
+              </div>
+
+              <!-- 民衆を導く女神 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>民衆を導く自由の女神</br>La Liberté guidant le peuple</h1>
+                  <p>(by Ferdinand Victor Eugène Delacroix, 1830)</p>
+                  <p>これは3回目に行ってやっと見つけられました。この絵画の奥の方にフランスの国旗が小さく描かれているらしいですが、この写真からだとわからないと思います。</p>
+                </div>
+                <img src="./imgs_museum/megami.JPG" alt="">
+              </div>
+
+              <!-- ナポレオン -->
+              <div class="right-d clearbox">
+                <img style="float: left;" src="./imgs_museum/nap.JPG" alt="">
+                <div class="description">
+                  <h1>アルプスを越えるボナパルト</br>Bonaparte Crossing the Alps</h1>
+                  <p>(by  Paul Delaroche, 1850)</p>
+                  <p>これはモスクワ遠征に行ってナポレオンが負けて帰ってきたときの絵画です。あの有名なベルナール峠からアルプスを越えるボナパルトの肖像画はベルサイユ宮殿にあったようですが、そこでは見つけるけることができませんでした。</p>
+                </div>
+              </div>
+
+              <!-- ナポレオンの戴冠式 -->
+              <div class="left-d clearbox">
+                <div class="description">
+                  <p>(by Jacques-Louis David, 1805–07)</p>
+                  <h1>ナポレオン一世の戴冠式と皇妃ジョゼフィーヌの戴冠</br>Sacre de l'empereur Napoléon Ier et couronnement de l'impératrice Joséphine dans la cathédrale Notre-Dame de Paris, le 2 décembre</h1>
+                  <p>これも3回目に行ったときにようやく見つけられました。近くにいる人間の大きさからわかる通り、この絵画はとても大きかったです。</p>
+                </div>
+                <img src="./imgs_museum/nap02.JPG" alt="">
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!-- モンマルトル -->
+          <div id="item11" class="port">
+
+            <div class="row">
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>モンマルトル</br>Montmartre</h1>
+                  <p>パリでもっとも高い丘です。ここからパリの街を眺めることができます。</p>
+                </div>
+                <img src="./imgs_museum/Mon.JPG" alt=""></img>
+              </div>
+
+              <div class="right-d clearbox">
+                <div class="row">
+                  <img src="./imgs_museum/view.JPG" alt=""></img>
+                  <div class="description">
+                    <p>上から見た眺めです。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- オルセー美術館 -->
+          <div id="item12" class="port">
+
+            <div class="row">
+              <div class="left-d clearbox">
+                <div class="description">
+                  <h1>オルセー美術館</br>Musée d'Orsay</h1>
+                  <p>19世紀美術専門の美術館です。印象派の画家の作品が多く展示されています。</p>
+                  <p>この建物はもともと、オルセー駅の鉄道駅舎けんホテルでした。この美術館の中央ホールは、地下ホームの吹き抜け構造をそのまま残しています。</p>
+                  <p>なので、写真からわかるように駅のホームの面影が残っています。</p>
+                </div>
+                <img src="./imgs_museum/orse.JPG" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

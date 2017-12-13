@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PROFILE</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansjp.css' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/menu.css" rel="stylesheet" types="text/css">
     <link href="css/name.css" rel="stylesheet" types="text/css">
     <link href="css/profile.css" rel="stylesheet" types="text/css">
+    <link href="css/icon2.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/homepage.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/icon.js"></script>
   </head>
 
   <body>
@@ -24,7 +31,13 @@
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./profile.html">PROFILE</a></li>
           <li><a href="./activity.html">ACTIVITY</a></li>
-          <li><a href="./hobby.html">HOBBY</a></li>
+          <li class="ttl"><a href="./hobby.html">HOBBY</a>
+            <ul class="hobby-menu">
+              <li><a href="./museum.html">trip</a></li>
+              <br/>
+              <li><a href="./museum.html">food</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -34,12 +47,33 @@
             <div class="content-body" style="padding: 60px 60px;">
 
               <div id="content-left">
-                <h3 style="font-size: 35px;">Juko Yamamoto</h3>
-                <div class="name mv07">
+                <h4 style="font-size: 35px;">Juko Yamamoto</h4>
+                <div class="name mv07"></div>
+                <div style="margin: 2em auto;" class="social">
+
+                       <!-- facebookリンク -->
+                          <a href="#" class="link facebook" target="_parent">
+                            <i class="fa fa-facebook fa-large"></i>
+                          </a>
+
+                       <!-- pocketボタン -->
+                          <a href="/" class="link pocket" target="_parent">
+                            <i class="fa fa-instagram fa-large"></i>
+                          </a>
+
+                        <!-- twitterボタン -->
+                          <a href="https://twitter.com/share" class="link twitter" target="_parent">
+                            <i class="fa fa-twitter fa-large"></i>
+                          </a>
+
+                        <!-- googleボタン　-->
+                          <a href="https://plus.google.com" class="link google-plus" target="_parent">
+                            <i class="fa fa-github-alt fa-large"></i>
+                          </a>
                 </div>
               </div>
 
-              <div class="content-middle">
+              <div id="content-middle">
                 <div class="mybackground">
                     <h3 style="font-size: 30px;">BACKGROUND</h3>
                     <table class="myb">
@@ -73,7 +107,7 @@
               </div>
 
               <div id="submenuright">
-                <h3 style="font-size: 30px;">SKILL</h3>
+               <h3 style="font-size: 30px;">SKILL</h3>
                 <p>
                     2017　英検準１級
                 </p>

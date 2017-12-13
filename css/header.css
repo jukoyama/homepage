@@ -1,11 +1,16 @@
 
 #header h1 {
-    position: absolute;
+    position: absolute;  /* absoluteから変更 */
     width: 100%;
     text-align: center;
     line-height: 60px;
     transition: transform .6s ease;
     font-family: cursive;
+}
+
+#header {
+  position: relative;
+  z-index: 9999;
 }
 
 #header:not([data-fixmode="top"]):not([data-fixmode="wait"]) h1 {
@@ -78,6 +83,7 @@ h2 {
     line-height: 38px;
     border-bottom: 2px solid transparent;
     transition: padding .6s ease;
+    position: relative;
 }
 
 #header:not([data-fixmode="top"]) .menu li {
@@ -86,4 +92,27 @@ h2 {
 
 .menu li:hover {
     border-bottom: 2px solid #2fb9ac;
+}
+
+
+.hobby-menu {
+  width: auto;
+  background: rgba(240, 240, 240, .85);
+  display: none;
+  position: absolute;
+  margin-top: 11.5px;
+  padding: 0 10px;
+  left: 0.5px;
+}
+
+.hobby-menu li {
+  display: inline-block;
+  line-height: normal;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  transition: padding .6s ease;
+}
+
+.hobby-menu li:hover {
+  border-bottom: 2px solid #d64e80;
 }

@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>ACTIVITY</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/notosansjp.css' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
   　<link href="css/hobby.css" rel="stylesheet" types="text/css">
+    <link href="css/icon2.css" rel="stylesheet" types="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/icon.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -22,7 +29,13 @@
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./profile.html">PROFILE</a></li>
           <li><a href="./activity.html">ACTIVITY</a></li>
-          <li><a href="./hobby.html">HOBBY</a></li>
+          <li class="ttl"><a href="./hobby.html">HOBBY</a>
+            <ul class="hobby-menu">
+              <li><a href="./museum.html">trip</a></li>
+              <br/>
+              <li><a href="./museum.html">food</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -31,9 +44,8 @@
     <div class="content bg" style="padding-top:100px;">
       <div class="content-body">
 
-        <div style="padding-top: 10px; font-family: 'klee', sans-serif;" class="hobby2">
-
-          <h1> 課外活動 </h1></br>
+        <div class="hobby-x">
+          <span class="hobby-title">課外活動</span>
           <p>
             部活：お茶の水女子大学バドミントン部
           </p>
@@ -44,41 +56,27 @@
             活動：毎週火・木・土　3時間
           </p>
           <p>
-            大会：春リーグ・秋リーグ・三多摩
+            大会：春リーグ・国公立・秋リーグ・理工系・三多摩
           </p>
         　</br>
           <p>
             バド部のtwitterもよければフォローしてください＾＾
           </p>
-
+          <div class="social">
+                <!-- twitterボタン -->
+                  <a href="https://twitter.com/ochabd2014" class="link twitter" target="_parent">
+                    <i class="fa fa-twitter fa-large"></i>
+                  </a>
+                  <p style="color: #00ACEE">@ochabad2014</p>
+          </div>
         </div>
 
       </br>
 
-        <div style="padding-top: 10px;" class="hobby2">
+        <div class="hobby-x">
 
-          <!-- <h1> アルバイト </h1></br>
-          <p>
-            塾講師
-          </p> -->
-
-          <h1> 課外活動 </h1></br>
-          <p>
-            部活：お茶の水女子大学バドミントン部
-          </p>
-          <p>
-            役職：会計
-          </p>
-          <p>
-            活動：毎週火・木・土　3時間
-          </p>
-          <p>
-            大会：春リーグ・秋リーグ・三多摩
-          </p>
-        　</br>
-          <p>
-            バド部のtwitterもよければフォローしてください＾＾
-          </p>
+          <span class="hobby-title"> その他 </span>
+          <p>アルバイト：個別指導の塾講師</p>
 
         </div>
 

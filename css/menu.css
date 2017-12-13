@@ -1,56 +1,42 @@
 /* profile */
 h3 {
-  font-family: cursive;
+  color: #d64e80;
+  font-size: 50px;
+  border-bottom: solid 1px #d64e80;
+}
+
+h4 {
+  color: #d64e80;
   text-align: center;
   font-size: 50px;
 }
 
-.content-middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 .detail {
-  font-family: cursive;
   color: black;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  font-size: 18px;
+}
+.belong {
+  margin-bottom: 20px;
 }
 .belong p {
-  line-height: 10px;
-}
-
-#link-profile {
-  line-height: 10px;
-  color: rgba(214,78,128,.4);
-}
-
-#link-profile:hover {
-  border-bottom: 1px solid #d64e80;
-  padding-bottom: 3px;
-  color: #d64e80;
-}
-
-/* contact */
-h4 {
-  font-family: cursive;
-  text-align: center;
-  font-size: 30px;
-}
-
-
-#link-profile {
-  float: right;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 .content-body {
   display: flex;
+  justify-content: space-around;
+}
 
-  justify-content: space-between;
+.spc {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #d64e80;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  border-top: solid 5px;
 }
 
 /* スクロールした時の動き */
@@ -66,6 +52,10 @@ h4 {
 	-webkit-transform: translate(0,0);
 }
 
+.social {
+  text-align: center;
+}
+
 .social a {
   padding-left: 0;
   display:table;
@@ -77,20 +67,63 @@ h4 {
 
 /* 中央プロフィール */
 div#content-left {
+  position: relative;
   float: left;
 }
 
+div#content-middle {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+
 div#submenuright {
-  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
   text-align: center;
+}
+
+.m-g {
+    position: relative;
+    margin: 7em 0;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px #d64e80;
+    border-bottom: dotted 1px #d64e80;
+}
+.m-g .m-g-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    /*background: #9CC;*/ /* 水色 */
+    /*background: rgba(214,78,128,.4);*/ /* ピンク */
+    background: #d64e80; /* 濃いピンク */
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+.m-g p {
+    margin: 0;
+    padding: 0;
 }
 
 .calender {
   background-color: white;
+  margin: 0;
 }
-
-.map img{
-  width: 50%;
-  height: auto;
-  text-align: center;
+.link-act {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  z-index: 5;
 }
